@@ -9,14 +9,14 @@ public class Seeker {
         for(int i = 0; i < 5; i++){
             for(int j = 0; j < 5; j++){
                 if(sea[i][j].equals("N")){
-                   swimming(sea, "E", i, j);
+                   keepSwimming(sea, "E", i, j);
                 }
             }
         }
         return response;
     }
 
-    private static void swimming(String [][] sea, String nextLetter, int i, int j) {
+    private static void keepSwimming(String [][] sea, String nextLetter, int i, int j) {
 
         if(j+1 < sea[0].length)
         {
